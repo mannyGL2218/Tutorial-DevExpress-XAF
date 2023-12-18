@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application Title="CreacionTest" PreferredLanguage="es">
+  <BOModel>
+    <Class Name="DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyUser" Caption="Base User" />
+  </BOModel>
+  <Options>
+    <LayoutManagerOptions RequiredFieldMark="*" />
+  </Options>
+  <SchemaModules>
+    <SchemaModule Name="CloneObjectModule" Version="21.2.7.0" IsNewNode="True" />
+    <SchemaModule Name="SchedulerModuleBase" Version="21.2.7.0" IsNewNode="True" />
+    <SchemaModule Name="SystemModule" Version="21.2.7.0" IsNewNode="True" />
+  </SchemaModules>
+  <Validation>
+    <Rules>
+      <RuleRequiredField Id="DevExpress.Persistent.Validation.RuleRequiredField_CreacionTest.Module.BusinessObjects.Pruebas.Peliculas_Titulo" MessageTemplateMustNotBeEmpty="La propiedad &quot;{TargetPropertyName}&quot; no puede quedar vacía." />
+    </Rules>
+  </Validation>
+  <Views>
+    <ListView Id="ApplicationUser_ListView" Caption="Users" />
+    <DetailView Id="Peliculas_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="25.833333333333332">
+            <LayoutGroup Id="Peliculas" RelativeSize="100">
+              <LayoutGroup Id="Peliculas_col1" RelativeSize="49.890590809628009">
+                <LayoutItem Id="Titulo" RelativeSize="36.363636363636367" />
+                <LayoutItem Id="Precio" Index="1" RelativeSize="27.272727272727273" />
+                <LayoutItem Id="Pelicula" Index="2" RelativeSize="36.363636363636367" ViewItem="Pelicula" IsNewNode="True" />
+                <LayoutItem Id="FechaDePublicacion" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="Peliculas_col2" RelativeSize="50.109409190371991">
+                <LayoutItem Id="FechaDePublicacion" ViewItem="FechaDePublicacion" Index="1" RelativeSize="27.272727272727273" IsNewNode="True" />
+                <LayoutItem Id="Visible" ViewItem="Visible" Index="2" RelativeSize="36.363636363636367" IsNewNode="True" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" RelativeSize="74.166666666666671">
+            <LayoutItem Id="Sinopsis" RelativeSize="100" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>
